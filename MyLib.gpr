@@ -6,7 +6,7 @@ project MyLib is
    for Library_Dir use "lib";
    for Library_Kind use "dynamic";
    for Library_Interface use ("MyLib");
-   for Library_Standalone use "Standard";
+   for Library_Standalone use "encapsulated";
 
    for Source_Dirs use ("src");
 
@@ -22,5 +22,9 @@ project MyLib is
    package Binder is
       for Switches ("Ada") use ("-E");
    end Binder;
+
+   package Linker is
+      for Linker_Options use ("-Wl,--version-script=mylib.map");
+   end Linker;
 
 end MyLib;

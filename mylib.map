@@ -1,0 +1,7 @@
+{
+  global:
+    initialize;
+    add;
+  local:
+    *;
+};

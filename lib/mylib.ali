@@ -12,63 +12,26 @@ A -march=x86-64
 P SL ZX
 
 RN
-RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 
-U mylib%b		mylib.adb		d443689f OO PK
-W ada%s			ada.ads			ada.ali
-Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
-W ada.text_io%s		a-textio.adb		a-textio.ali
+U mylib%b		mylib.adb		b2a684d5 OO PK
 
-U mylib%s		mylib.ads		ec46a07f EB EE NE OO PK
-Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+U mylib%s		mylib.ads		2feafe46 EB EE NE OO PK
 
-D ada.ads		20240521074738 76789da1 ada%s
-D a-except.ads		20240521074738 2a7d8d70 ada.exceptions%s
-D a-ioexce.ads		20240521074738 40018c65 ada.io_exceptions%s
-D a-stream.ads		20240521074738 119b8fb3 ada.streams%s
-D a-string.ads		20240521074738 90ac6797 ada.strings%s
-D a-sttebu.ads		20240521074738 f1ad67a2 ada.strings.text_buffers%s
-D a-stuten.ads		20240521074738 c6ced0ae ada.strings.utf_encoding%s
-D a-tags.ads		20240521074738 9eaa38c6 ada.tags%s
-D a-textio.ads		20240521074738 5c2c6153 ada.text_io%s
-D a-unccon.ads		20240521074738 0e9b276f ada.unchecked_conversion%s
-D interfac.ads		20240521074738 15f799c2 interfaces%s
-D i-cstrea.ads		20240521074738 e53d8b8e interfaces.c_streams%s
-D mylib.ads		20250108163735 ec46a07f mylib%s
-D mylib.adb		20250108163903 6429a9b3 mylib%b
+D mylib.ads		20250108195405 2feafe46 mylib%s
+D mylib.adb		20250108194942 9d4c7a93 mylib%b
 D system.ads		20240521074738 426dafb8 system%s
-D s-crtl.ads		20240521074738 8a0692f8 system.crtl%s
-D s-exctab.ads		20240521074738 91bef6ef system.exception_table%s
-D s-ficobl.ads		20240521074738 dc5161d4 system.file_control_block%s
-D s-parame.ads		20240904144414 1f39ba92 system.parameters%s
-D s-putima.ads		20240521074738 17291fe4 system.put_images%s
-D s-secsta.ads		20240521074738 578279f5 system.secondary_stack%s
-D s-soflin.ads		20240521074738 df77073e system.soft_links%s
-D s-stache.ads		20240521074738 0b81c1fe system.stack_checking%s
-D s-stalib.ads		20240521074738 1c9580f6 system.standard_library%s
-D s-stoele.ads		20240521074738 ab5468e4 system.storage_elements%s
-D s-stoele.adb		20240521074738 8f5a9db6 system.storage_elements%b
-D s-traent.ads		20240521074738 c81cbf8c system.traceback_entries%s
-D s-unstyp.ads		20240521074738 fa2a7f59 system.unsigned_types%s
-D s-wchcon.ads		20240521074738 d9032363 system.wch_con%s
 G a e
-G c Z s b [initialize mylib 8 13 none]
-G c Z s b [add mylib 11 13 none]
-G c Z b b [initialize_package mylib 7 14 none]
-X 1 ada.ads
-16K9*Ada 20e8 14|1r6 1r23
-X 9 a-textio.ads
-58K13*Text_IO 787e16 14|1w10 1r27
-X 13 mylib.ads
-3K9*MyLib 15E4 16l5 16e10 14|3b14 32l5 32t10
-8V13*Initialize{integer} 9i<c,initialize>22 14|15b13 21l8 21t18
-11V13*Add{integer} 11>18 11>21 12i<c,add>22 14|25b13 28l8 28t11
-11i18 A{integer} 14|25b18 27r14
-11i21 B{integer} 14|25b21 27r18
-15b4 Initialized{boolean} 14|12m7 17r14
-X 14 mylib.adb
-7U14 Initialize_Package 8i<c,_ada_my_library_init>22 10b14 13l8 13t26 18s10
-. 31s4
+G c Z s b [initialize mylib 6 13 none]
+G c Z s b [add mylib 9 13 none]
+X 1 mylib.ads
+3K9*MyLib 13E4 14l5 14e10 2|1b14 29l5 29t10
+6V13*Initialize{integer} 2|12b13 18l8 18t18
+9V13*Add{integer} 9>18 9>21 2|22b13 25l8 25t11
+9i18 A{integer} 2|22b18 24r14
+9i21 B{integer} 2|22b21 24r18
+13b4 Initialized{boolean} 2|9m7 14r14
+X 2 mylib.adb
+5U14 Initialize_Package 7b14 10l8 10t26 15s10 28s4
 

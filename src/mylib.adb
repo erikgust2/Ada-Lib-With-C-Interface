@@ -1,11 +1,8 @@
-with Ada.Text_IO; use Ada.Text_IO;
-
 package body MyLib is
 
    -- Initializes secondary stack because Ada Runtime isn't smart enough to do it itself... :(
 
    procedure Initialize_Package;
-   pragma Export (C, Initialize_Package, "_ada_my_library_init");
 
    procedure Initialize_Package is
    begin
