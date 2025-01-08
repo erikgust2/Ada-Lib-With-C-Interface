@@ -1,0 +1,6 @@
+{
+    "ada.projectFile": "MyLib.gpr",
+    "ada.useGnatformat": true,
+    "ada.renameInComments": true,
+    "ada.useCompletionSnippets": true
+}
