@@ -9,20 +9,20 @@ package body MyLib is
       Initialized := True;
    end Initialize_Package;
 
-   function Initialize return Integer is
+   function Internal_Initialize return Integer is
    begin
       if not Initialized then
          Initialize_Package;
       end if;
       return 1;
-   end Initialize;
+   end Internal_Initialize;
 
    -- Public API Functions
 
-   function Add (A, B : in Integer) return Integer is
+   function Internal_Add (A, B : in Integer) return Integer is
    begin
       return A + B;
-   end Add;
+   end Internal_Add;
 
 begin
    Initialize_Package;

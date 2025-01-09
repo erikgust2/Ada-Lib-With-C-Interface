@@ -5,9 +5,9 @@
 extern "C" {
 #endif
 
-extern int initialize(void);
+extern int initializer(void);
 
-extern int add(int a, int b);
+extern int adder(int a, int b);
 #ifdef __cplusplus
 }
 #endif

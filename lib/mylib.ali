@@ -2,7 +2,6 @@ V "GNAT Lib v13"
 A -O2
 A -gnatA
 A -g
-A -g
 A -gnatwa
 A -gnatVa
 A -gnat12
@@ -15,22 +14,22 @@ RN
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 
-U mylib%b		mylib.adb		b2a684d5 OO PK
+U mylib%b		mylib.adb		a0fd70cc OO PK
 
-U mylib%s		mylib.ads		2feafe46 EB EE NE OO PK
+U mylib%s		mylib.ads		15ddfdd6 EB EE NE OO PK
 
-D mylib.ads		20250108195405 2feafe46 mylib%s
-D mylib.adb		20250108194942 9d4c7a93 mylib%b
+D mylib.ads		20250109220926 15ddfdd6 mylib%s
+D mylib.adb		20250109215625 b5208d1a mylib%b
 D system.ads		20240521074738 426dafb8 system%s
 G a e
-G c Z s b [initialize mylib 6 13 none]
-G c Z s b [add mylib 9 13 none]
+G c Z s b [internal_initialize mylib 6 13 none]
+G c Z s b [internal_add mylib 9 13 none]
 X 1 mylib.ads
 3K9*MyLib 13E4 14l5 14e10 2|1b14 29l5 29t10
-6V13*Initialize{integer} 2|12b13 18l8 18t18
-9V13*Add{integer} 9>18 9>21 2|22b13 25l8 25t11
-9i18 A{integer} 2|22b18 24r14
-9i21 B{integer} 2|22b21 24r18
+6V13*Internal_Initialize{integer} 2|12b13 18l8 18t27
+9V13*Internal_Add{integer} 9>27 9>30 2|22b13 25l8 25t20
+9i27 A{integer} 2|22b27 24r14
+9i30 B{integer} 2|22b30 24r18
 13b4 Initialized{boolean} 2|9m7 14r14
 X 2 mylib.adb
 5U14 Initialize_Package 7b14 10l8 10t26 15s10 28s4

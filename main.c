@@ -4,7 +4,7 @@
 int main(void)
 {
     // Always initialize the Ada runtime first
-    if (initialize() != 1)
+    if (initializer() != 1)
     {
         fprintf(stderr, "Failed to initialize Ada runtime\n");
         return 1;
@@ -22,7 +22,7 @@ int main(void)
     {
         int a = test_cases[i][0];
         int b = test_cases[i][1];
-        int result = add(a, b);
+        int result = adder(a, b);
 
         printf("%d + %d = %d\n", a, b, result);
     }

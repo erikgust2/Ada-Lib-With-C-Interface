@@ -1,7 +1,7 @@
 {
   global:
-    initialize;
-    add;
+    initializer;
+    adder;
   local:
     *;
 };
